@@ -23,7 +23,7 @@ mongoose.connect(MONGODB_URI).then(() => {
 
 
 initRouter(app);
-app.get('/', (req, res) => {
+app.get('/api/example', (req, res) => {
     res.send('Hello World!');
 });
 

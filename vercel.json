@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
         {
-            "src": "app.js",
+            "src": "./app.js",
             "use": "@vercel/node"
         }
     ],
@@ -11,10 +11,5 @@
             "src": "/api/(.*)",
             "dest": "/api/v1/"
         }
-    ],
-    "env": {
-        "NODE_ENV": "production",
-        "DATABASE_URL": "mongodb://localhost:27017/blog"
-    },
-    "public": "public"
+    ]
 }
